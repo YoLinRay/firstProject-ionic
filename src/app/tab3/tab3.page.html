@@ -20,17 +20,17 @@
     <h6 class="userName" *ngIf="User.vaildUser">{{User.userName}}</h6>
   </div>
   <div *ngFor="let User of User">
-    <div style="text-align: center;"*ngIf="User.vaildUser && User.imageSrc">
+    <div style="text-align: center;"*ngIf="User.vaildUser">
       <button class="memberBtn">修改會員資料</button>
     </div>
     <br>
-    <div style="padding-top: 20px; text-align: center;"*ngIf="User.vaildUser && User.imageSrc">
+    <div style="padding-top: 20px; text-align: center;"*ngIf="User.vaildUser">
       <button class="memberBtn">瀏覽紀錄</button>
     </div>
-  <div style="text-align: center;" *ngIf="User.vaildUser && User.imageSrc">
+  <div style="text-align: center;" *ngIf="User.vaildUser">
     <button id="logOut" (click) = "logOut()">登出</button>
   </div>
-  <div id="travelImg"*ngIf="User.vaildUser && User.imageSrc" >
+  <div id="travelImg"*ngIf="User.vaildUser" >
       <img src="/assets/Img/travel2.png">
   </div>
 </div>
