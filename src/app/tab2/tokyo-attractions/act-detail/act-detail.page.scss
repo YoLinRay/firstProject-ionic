@@ -1,0 +1,47 @@
+ion-toolbar{
+    --background:#F75C2F
+}
+ion-title{
+    
+    color: white;
+    font-weight: bolder;
+    font-size:x-large;
+}
+ion-content{
+
+    --ion-background-color:	white;
+}
+.aTitle{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 24px;
+    background-color: #4F4F48;
+    color: white;
+}
+.isSave{
+    color:red;
+}
+.isOnSave{
+    color:white;
+}
+.description{
+    font-size: 18px;
+    
+}
+#starBtn{
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+    display: inline-block;
+}
+#shareBtn{
+    border: none;
+    background-color: inherit;
+    font-size: 18px;
+    cursor: pointer;
+    display: inline-block;
+    color: #CB4042;
+    text-decoration:underline;
+    font-weight: bold;
+    padding-left: 40px;
+}

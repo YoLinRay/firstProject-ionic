@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align:center;">JAPAN景點</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div style="text-align: center; padding-left: 200px;">
+    <img src="/assets/Img/flyninja.png" style="width: 100px;height: 100px;background: none;"></div>
+    <h4 id="title" style="background: none;">註冊</h4>
+  <div id="userName1">
+    <span style="padding-right: 120px;">
+      <label style="font-size: 20px; font-weight: bold; color: #272727;">請輸入使用者名稱:</label>
+    </span>
+    <br>
+    <input type="text" id="userName" size="30" placeholder="王小明"
+      style="height: 30px; background-color: white; border-radius: 5px;">
+  </div>
+  <div id="account">
+    <span style="padding-right: 120px;">
+      <label style="font-size: 20px; font-weight: bold; color: #272727;">請輸入Email信箱:</label>
+    </span>
+    <br>
+    <input type="email" id="email" name="email" size="30" placeholder="12345@example.com" [(ngModel)]="userEmail"
+      style="height: 30px; background-color: white; border-radius: 5px;">
+  </div>
+  <div id="pwd">
+    <span style="padding-right: 175px;">
+      <label style="font-size: 20px; font-weight: bold; color: #272727;">請輸入密碼:</label>
+    </span>
+    <br>
+    <input type="password" name="pwd" size="30" placeholder="輸入密碼" [(ngModel)]="pwd"
+      style="height: 30px; background-color: white; border-radius: 5px;">
+  </div>
+  <div id="pwdC">
+    <span style="padding-right: 200px;">
+      <label style="font-size: 20px; font-weight: bold; color: #272727;">確認密碼:</label>
+    </span>
+    <br>
+    <input type="password" name="pwd" size="30" placeholder="確認密碼" [(ngModel)]="pwdCheck"
+      style="height: 30px; background-color: white; border-radius: 5px;">
+  </div>
+  <div style="text-align: center;">
+    <label *ngIf="!samePwd" style="color: #AE0000;text-shadow: 0.1em 3px 6px red; font-size: large;padding-left: 200px; font-weight: bolder;">密碼不一致</label>
+  </div>
+  <div style="text-align: center; padding-top: 50px;">
+    <button id="signupBtn" (click)="signup()">註冊</button>
+  </div>
+  <div style="text-align: center; padding-top: 20px;">
+    <button id="conBtn"(click)="back()">取消</button>
+  </div>
+</ion-content>

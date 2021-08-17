@@ -1,0 +1,28 @@
+ion-toolbar{
+    --background:#6C6024
+}
+ion-title{
+    
+    color: white;
+    font-weight: bolder;
+    font-size:x-large;
+}
+ion-content{
+
+    --ion-background-color:	white;
+}
+ion-icon{
+    position: absolute;
+   right: var(--padding-start);
+   color: gray;
+}
+#imgA{
+    padding-top: 150px;
+   
+}
+#tabT{
+    padding-left: 25px;
+    font-size: 32px;
+    font-weight: bolder;
+    color:red ;
+}

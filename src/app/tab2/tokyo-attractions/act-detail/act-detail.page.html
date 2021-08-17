@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title style="text-align:center;">東京都</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="attractionOne" class="ion-padding">
+  <img src="{{attractionOne.imageSrc}}">
+  <div>
+    <button id="starBtn" *ngFor="let r of ratingArr; index as i" (click)="onClick(i)">
+      <ion-icon name="{{returnStar(i)}}" style="width: 25px;height:25px; color:#FFB11B"></ion-icon>
+    </button>
+    <button id="shareBtn" (click) = "showBoard(attractionOne)">旅客心得分享</button>
+  </div>
+  <div>
+    <h4 class="aTitle">{{(attractionOne ? attractionOne.Name : '')}}<ion-buttons style="float: right;">
+      <ion-button (click)="addToFavorite(attractionOne)" (click)="openPopover($event)">
+        <ion-icon name="{{attractionOne.saveIcon}}"
+          [ngClass]="{ true:'isSave' , false: 'isOnSave'}[attractionOne.save]"></ion-icon>
+      </ion-button>
+    </ion-buttons></h4>
+    
+  </div>
+  <div class="description">
+    {{attractionOne.description}}
+  </div>
+  <br>
+  <img src="{{attractionOne.imageSrc2}}">
+  <br>
+  <div class="description">
+    {{attractionOne.description2}}
+  </div>
+  <br>
+  <img src="{{attractionOne.imageSrc3}}">
+  <br>
+  <div class="description">
+    {{attractionOne.description3}}
+  </div>
+  <div style="margin-top: 20px;">
+    <h5>位址:<a href="{{attractionOne.google}}">{{attractionOne.googleName}}</a><img src="/assets/Img/map.png" style="width: 30px;height: 30px;"></h5>
+  </div>
+
+</ion-content>

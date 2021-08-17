@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar id="toolBar">
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title style="text-align:center;">東京都</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-searchbar id="countrySearch2" color="medium" animated (ionChange)="buscar($event)" placeholder="旅遊景點">
+  </ion-searchbar>
+  <ion-list button *ngFor="let attraction of attractions | filtro:textoBuscar" (click)="showDetail(attraction)">
+    <div style="padding-top: 5px;">
+      <ion-item>
+        <img src="{{attraction.imageSrc}}" style="width:80px;height: 80px; border-radius: 10px;object-fit: cover;">
+        <div style="font-weight: bolder; margin-left: 5px;font-size: 18px;">{{attraction.Name}}
+          <br>
+          <ion-icon *ngFor = "let r of starAry" name="{{r}}" style="color: #FFB11B;"></ion-icon>
+        </div>
+
+        <ion-icon id="next" name="{{attraction.iconName}}"></ion-icon>
+      </ion-item>
+    </div>
+  </ion-list>
+  <app-explore-container name="tokyoattractions page"></app-explore-container>
+</ion-content>

@@ -1,0 +1,53 @@
+ion-toolbar{
+    --background:#6C6024;
+}
+ion-content{
+    --background:white;
+}
+ion-title{
+    color: white;
+    font-weight: bolder;
+    font-size:x-large;
+}
+#title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    padding-top: 25px;
+    color: 	#6C6024
+}
+#userName1{
+    text-align: center;
+    padding-top: 20px;
+}
+#account{
+    text-align: center;
+    padding-top: 20px;
+}
+#pwd{
+    text-align: center;
+    padding-top: 20px;
+}
+#pwdC{
+    text-align: center;
+    padding-top: 20px;
+}
+#signupBtn{
+    width: 200px;
+    height: 50px; 
+    border-radius:30px;
+    font-size: 30px;
+    background-color:#6C6024 ;
+    font-weight: bolder;
+    color: white;
+}
+#conBtn{
+    width: 200px;
+    height: 50px; 
+    border-radius:30px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: red;
+    background-color: white;
+    border: 1px solid red;
+}

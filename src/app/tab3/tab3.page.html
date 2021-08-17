@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align:center;">JAPAN景點</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <div style=" text-align: center;" *ngIf="userService.vaildUser === false">
+    <img src="/assets/Img/kouyo.png" id="imgA">
+    <div>
+      <button  id="tabT" (click)="signin()">前往登入會員</button>
+    </div>
+  </div>
+  <div  *ngFor="let User of User" style="padding-top: 30px;">
+    <ion-avatar *ngIf="User.vaildUser && !User.imageSrc ">
+      <img src="/assets/Img/noimg.png">
+    </ion-avatar>
+    <ion-avatar *ngIf="User.vaildUser && User.imageSrc">
+      <img src="{{User.imageSrc}}">
+    </ion-avatar>
+    <h6 class="userName" *ngIf="User.vaildUser">{{User.userName}}</h6>
+  </div>
+  <div *ngFor="let User of User">
+    <div style="text-align: center;"*ngIf="User.vaildUser && User.imageSrc">
+      <button class="memberBtn">修改會員資料</button>
+    </div>
+    <br>
+    <div style="padding-top: 20px; text-align: center;"*ngIf="User.vaildUser && User.imageSrc">
+      <button class="memberBtn">瀏覽紀錄</button>
+    </div>
+  <div style="text-align: center;" *ngIf="User.vaildUser && User.imageSrc">
+    <button id="logOut" (click) = "logOut()">登出</button>
+  </div>
+  <div id="travelImg"*ngIf="User.vaildUser && User.imageSrc" >
+      <img src="/assets/Img/travel2.png">
+  </div>
+</div>
+
+
+</ion-content>

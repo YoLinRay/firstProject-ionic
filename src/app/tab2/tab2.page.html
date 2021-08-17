@@ -1,0 +1,133 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align:center;">JAPAN景點</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+ 
+    <ion-slides [options]="slideOptions" pager="true" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)">
+      <ion-slide *ngFor="let item of banner">
+        <img src="{{item.imageSrc}}" style="height: 200px;">
+      </ion-slide>
+    </ion-slides>
+  <div>
+    <h2 id="title">關東地區</h2>
+    <div class="hr"></div>
+  </div>
+  <div>
+    <button class="one" value="東京都" (click)="tokyo()">東京都</button>
+    <button class="one" value="神奈川">神奈川</button>
+    <button class="one" value="千葉縣">千葉縣</button>
+    <div style="padding-top: 15px;">
+      <button class="one" value="琦玉縣">琦玉縣</button>
+      <button class="one" value="栃木縣">栃木縣</button>
+      <button class="one" value="茨城縣">茨城縣</button>
+      <div>
+        <button class="one" value="群馬縣" style="margin-top:15px;">群馬縣</button>
+        </div>
+      </div>
+  </div>
+
+  <div style="padding-top: 15px;">
+    <h2 id="title2">近畿地方(關西地區)</h2>
+    <div class="hr"></div>
+  </div>
+  <div>
+    <button class="two" value="京都府">京都府</button>
+    <button class="two" value="大阪府">大阪府</button>
+    <button class="two" value="滋賀縣">滋賀縣</button>
+    <div style="padding-top: 15px;">
+      <button class="two" value="兵庫縣">兵庫縣</button>
+      <button class="two" value="奈良縣">奈良縣</button>
+      <button class="two" value="和歌山">和歌山</button>
+
+    </div>
+  </div>
+
+  <div style="padding-top: 15px;">
+    <h2 id="title3">中部地方</h2>
+    <div class="hr"></div>
+  </div>
+  <div>
+    <button class="three" value="山梨縣">山梨縣</button>
+    <button class="three" value="長野縣">長野縣</button>
+    <button class="three" value="新潟縣">新潟縣</button>
+    <div style="padding-top: 15px;">
+      <button class="three" value="岐阜縣">岐阜縣</button>
+      <button class="three" value="靜岡縣">靜岡縣</button>
+      <button class="three" value="愛知縣">愛知縣</button>
+      <div style="padding-top: 15px;">
+        <button class="three" value="富山縣">群馬縣</button>
+        <button class="three" value="石川縣">石川縣</button>
+        <button class="three" value="福井縣">福井縣</button>
+        <div style="padding-top: 15px;">
+          <button class="three" value="三重縣">三重縣</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="padding-top: 15px;">
+    <h2 id="title4">中國地方</h2>
+    <div class="hr"></div>
+  </div>
+  <div>
+    <button class="four" value="鳥取縣">鳥取縣</button>
+    <button class="four" value="島根縣">島根縣</button>
+    <button class="four" value="岡山縣">岡山縣</button>
+    <div style="padding-top: 15px;">
+      <button class="four" value="廣島縣">廣島縣</button>
+      <button class="four" value="山口縣">山口縣</button>
+    </div>
+  </div>
+  <div style="padding-top: 15px;">
+    <h2 id="title5">四國地方</h2>
+    <div class="hr"></div>
+  </div>
+  <div>
+    <button class="five" value="德島縣">德島縣</button>
+    <button class="five" value="香川縣">香川縣</button>
+    <button class="five" value="愛媛縣">愛媛縣</button>
+    <div style="padding-top: 15px;">
+      <button class="five" value="高知縣">高知縣</button>
+    </div>
+  </div>
+  <div style="padding-top: 15px;">
+    <h2 id="title6">九州地方</h2>
+    <div class="hr"></div>
+  </div>
+  <div>
+    <button class="six" value="福岡縣">福岡縣</button>
+    <button class="six" value="鹿兒島">鹿兒島</button>
+    <button class="six" value="熊本縣">熊本縣</button>
+    <div style="padding-top: 15px;">
+      <button class="six" value="宮崎縣">宮崎縣</button>
+      <button class="six" value="長崎縣">長崎縣</button>
+      <button class="six" value="大分縣">大分縣</button>
+    </div>
+    <div style="padding-top: 15px;">
+      <button class="six" value="沖繩縣">沖繩縣</button>
+      <button class="six" value="佐賀縣">佐賀縣</button>
+    </div>
+  </div>
+  <div style="padding-top: 15px;">
+    <h2 id="title7">東北地方</h2>
+    <div class="hr"></div>
+  </div>
+  <div>
+    <button class="seven" value="青森縣">青森縣</button>
+    <button class="seven" value="秋田縣">秋田縣</button>
+    <button class="seven" value="岩手縣">岩手縣</button>
+    <div style="padding-top: 15px;">
+      <button class="seven" value="山形縣">山形縣</button>
+      <button class="seven" value="宮城縣">宮城縣</button>
+      <button class="seven" value="福島縣">福島縣</button>
+    </div>
+  </div>
+  <div style="padding-top: 15px;">
+    <h2 id="title8">北海道</h2>
+    <div class="hr"></div>
+  </div>
+  <div>
+    <button class="eight" value="北海道">北海道</button>
+  </div>
+</ion-content>

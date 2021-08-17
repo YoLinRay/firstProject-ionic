@@ -1,0 +1,68 @@
+ion-toolbar{
+    --background:#6C6024;
+}
+ion-content{
+    --background:white;
+}
+ion-title{
+    color: white;
+    font-weight: bolder;
+    font-size:x-large;
+}
+#title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    padding-top: 25px;
+    color: 	#6C6024
+}
+#account{
+    text-align: center;
+    padding-top: 50px;
+}
+#pwd{
+    text-align: center;
+    padding-top: 30px;
+}
+.btnForget {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    color: red;
+    text-decoration:underline;
+    padding-left: 50px;
+    font-weight: bolder;
+   
+}
+#btnRegister {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    color: #484891;
+    text-decoration:underline;
+    padding-right: 120px;
+    font-weight: bolder;
+    
+  }
+#signinImg{
+    width: 350px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#LoginBtn{
+    width: 200px;
+    height: 50px; 
+    border-radius:30px;
+    font-size: 30px;
+    background-color:#6C6024 ;
+    font-weight: bolder;
+    color: white;
+}

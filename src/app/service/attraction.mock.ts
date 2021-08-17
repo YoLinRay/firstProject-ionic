@@ -1,0 +1,92 @@
+import { attractions } from "../models/Attractions";
+
+export const ATTRACTIONS : attractions[] = [
+{
+    id:1,
+    Name:"明治神宮",
+    description:"明治神宮是位於日本東京都澀谷區的神社，供奉明治天皇（第122代天皇）、昭憲皇太后（明治天皇皇后）的靈位。1920年啟用，占地70公頃，緊挨著原宿、新宿等東京兩大商圈，占據了從代代木到原宿站之間的整片地帶，與相鄰的代代木公園構成東京都內除了皇居以外最大的一塊綠地。",
+    imageSrc:"assets/Img/mei-img/meiji.jpg",
+    iconName:"chevron-forward-outline",
+    saveIcon:"bookmark",
+    save:false,
+    description2:"循著林木間的步道前進，便可抵達位於中央的神社。走在煙霧瀰漫的森林小道上，必能讓您忘卻自己正置身於東京最紛擾的兩個區域之間。",
+    imageSrc2:"assets/Img/mei-img/meiji2.jpg",
+    description3:"造訪完明治神宮，建議到旁邊的代代木公園散步，再前往原宿、表參道、澀谷、新宿等周邊商圈享受購物與美食。",
+    imageSrc3:"assets/Img/mei-img/meiji3.jpg",
+    googleName:"東京都涉谷區代代木神園町1-1",
+    google:"https://goo.gl/maps/NrA6TxsBkB8Gbrfi9"
+},
+{
+    id:2,
+    Name:"東京晴空塔",
+    iconName:"chevron-forward-outline",
+    description:"東京晴空塔，又譯稱東京天空樹、新東京鐵塔，是位於日本東京都墨田區的電波塔，由東武鐵道及其子公司東武塔晴空塔共同籌建，於2008年7月14日動工，2012年2月29日完工、同年5月22日正式啟用。其高度為634公尺，於2011年11月17日獲得金氏世界紀錄認證為「世界第一高塔」，成為全世界最高的塔式建築；目前亦為世界第二高的人工構造物，僅次於哈里發塔。",
+    imageSrc:"assets/Img/SKYTREE/skytree.jpg",
+    saveIcon:"bookmark",
+    save:false,
+    googleName:"東京都墨田区押上１丁目１−2",
+    google:"https://g.page/TOKYOSKYTREE-official?share"
+    
+},
+{
+    id:3,
+    Name:"淺草寺",
+    iconName:"chevron-forward-outline",
+    save:false,
+    imageSrc:"assets/Img/kaminari/kami.jpg",
+    saveIcon:"bookmark",
+    googleName:"東京都台東区浅草２丁目３−1",
+    google:"https://goo.gl/maps/vkumZtQ7enxaMWR5A"
+    
+},
+{
+    id:4,
+    Name:"新宿御苑",
+    iconName:"chevron-forward-outline",
+    save:false,
+    imageSrc:"assets/Img/sinjuku/sin.jpg",
+    saveIcon:"bookmark",
+    googleName:"東京都新宿区内藤町11",
+    google:"https://goo.gl/maps/jHyYUcZK5X8Y9LnGA"
+},
+{
+    id:5,
+    Name:"東京迪士尼樂園",
+    iconName:"chevron-forward-outline",
+    save:false,
+    imageSrc:"assets/Img/disney/dis.jpg",
+    saveIcon:"bookmark",
+    googleName:"千葉県浦安市舞浜1-1",
+    google:"https://goo.gl/maps/fMa9AE4vXkNUTrW99"
+},
+{
+    id:6,
+    Name:"上野恩賜公園",
+    iconName:"chevron-forward-outline",
+    save:false,
+    imageSrc:"assets/Img/ueno/kouen.jpg",
+    saveIcon:"bookmark",
+    googleName:"東京都台東区上野公園 池之端三丁目",
+    google:"https://goo.gl/maps/YhJ596TTj2QCsdna7"
+},
+{
+    id:7,
+    Name:"代代木公園",
+    iconName:"chevron-forward-outline",
+    save:false,
+    imageSrc:"assets/Img/yoyogi/kouen.jpg",
+    saveIcon:"bookmark",
+    googleName:"東京都渋谷区代々木神園町２−1",
+    google:"https://goo.gl/maps/M5ZeDzP6kWgeBQnu6"
+},
+{
+    id:8,
+    Name:"三鷹之森吉卜力美術館",
+    iconName:"chevron-forward-outline",
+    save:false,
+    imageSrc:"assets/Img/ghibli/bizyutsu.jpg",
+    saveIcon:"bookmark",
+    googleName:"東京都三鷹市下連雀１丁目１−83",
+    google:"https://goo.gl/maps/F8vRAbvdFqLd4GCNA"
+}
+]

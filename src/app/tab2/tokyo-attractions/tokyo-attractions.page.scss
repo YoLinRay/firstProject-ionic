@@ -1,0 +1,18 @@
+#toolBar{
+    --background:#F75C2F
+}
+ion-title{
+    
+    color: white;
+    font-weight: bolder;
+    font-size:x-large;
+}
+ion-content{
+
+    --ion-background-color:	white;
+}
+#next{
+    position: absolute;
+   right: var(--padding-start);
+   color: gray;
+}

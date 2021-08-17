@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar *ngIf="attractionOne">
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>留言板({{attractionOne.Name}})</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row  *ngFor="let user of users">
+      <ion-col size="9" *ngIf="currentUser !== user.userName" class="message other-message">
+        <b>{{user.userName}}</b><br>
+        <b>{{user.msg}}</b>
+        <div class="time" text-right><br>
+          {{user.createdAt | date:'short'}}
+        </div>
+      </ion-col>
+
+      <ion-col offset="3" size="9" *ngIf="currentUser === user.userName" class="message my-message">
+        <b>{{user.userName}}</b><br>
+        <b>{{user.msg}}</b>
+        <div class="time" text-right><br>
+          {{user.createdAt | date:'short'}}
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="light">
+    <ion-row align-items-center no-padding>
+      <ion-col size="10">
+        <textarea autosize maxRows="4" [(ngModel)]="newMsg" class="message-input"></textarea>
+      </ion-col>
+      <ion-col size="2">
+     <ion-button expand = "block" fill = "clear" color="primary" [disabled]="newMsg ===''"class="msg-btn" (click)="sendMsg()">
+       <ion-icon name = "send" slot="icon-only"></ion-icon>
+     </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align:center;">書籤</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <div style=" text-align: center;" *ngIf="favorite.length == 0 ">
+    <img src="assets/Img/airplane.png" id="imgA">
+    <h4 id="tabT">還沒加入任何景點喔</h4>
+  </div>
+  <ion-list *ngFor="let p of favorite" (click)="showDetail(p)">
+    <ion-item>
+      <img src="{{p.imageSrc}}" style="width: 80PX; height: 80px;">
+      <div style="font-weight: bolder; padding-left: 20px;">{{p.Name}}</div>
+      <ion-icon name="{{p.iconName}}"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
