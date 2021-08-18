@@ -9,30 +9,11 @@ ion-title{
     font-weight: bolder;
     font-size:x-large;
 }
-#title{
-    text-align: center;
-    font-size: 40px;
-    font-weight: bolder;
-    padding-top: 25px;
-    color: 	#6C6024
+#imgA{
+    padding-top: 50px;
+    width: 200px;
 }
-#userName1{
-    text-align: center;
-    padding-top: 20px;
-}
-#account{
-    text-align: center;
-    padding-top: 20px;
-}
-#pwd{
-    text-align: center;
-    padding-top: 20px;
-}
-#pwdC{
-    text-align: center;
-    padding-top: 20px;
-}
-#signupBtn{
+#EmailBtn{
     width: 200px;
     height: 50px; 
     border-radius:30px;
@@ -40,6 +21,14 @@ ion-title{
     background-color:#6C6024 ;
     font-weight: bolder;
     color: white;
+}
+#title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    padding-top: 100px;
+    color: 	#6C6024
+
 }
 #cancelBtn{
     width: 200px;

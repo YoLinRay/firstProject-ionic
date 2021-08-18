@@ -29,4 +29,7 @@ export class SigninPage implements OnInit {
   signupPage(){
     this.router.navigate(['/signup'])
   }
+  forgotPage(){
+    this.router.navigate(['/forgot-pwd'])
+  }
 }

@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align:center;">JAPAN景點</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div style=" text-align: center;">
+    <h4 id="title">忘記密碼</h4>
+    <img src="/assets/Img/forget.png" id="imgA">
+  </div>
+  <form #form="ngForm" (ngSubmit)="resetPassword(form)">
+    <div style="text-align: center;">
+      <input type="email" id="email" name="email" size="30" placeholder="請輸入Email" ngModel required
+        style="height: 50px; background-color: white; border-radius: 5px;">
+    </div>
+    <br>
+    <div style="text-align: center;margin: auto;">
+      <button id="EmailBtn" [disabled]="form.invalid">發送</button>
+    </div>
+  </form>
+  <div style="text-align: center; padding-top: 20px;">
+    <button id="cancelBtn" (click)="back()">取消</button>
+  </div>
+</ion-content>
