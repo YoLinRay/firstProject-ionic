@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align:center;">JAPAN景點</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+    <ion-list lines="full" class="ion-no-margin" *ngFor = "let user of Users">
+      <ion-list-header lines="full" *ngIf ="user.vaildUser">
+        <ion-label id="title">
+          修改會員資料
+        </ion-label>
+      </ion-list-header>
+      <div style="padding-top: 20px;">
+        <ion-avatar *ngIf="user.vaildUser">
+          <img *ngIf="user.vaildUser && !user.imageSrc " src="/assets/Img/noimg.png">
+          <img *ngIf="user.vaildUser && user.imageSrc" src="{{user.imageSrc}}">
+        </ion-avatar></div>
+        <div style="text-align: center;padding-top: 5px;" *ngIf="user.vaildUser">
+          <button id="photoBtn">更換頭貼</button>
+        </div>
+      <ion-item *ngIf ="user.vaildUser">
+        <ion-label class="itemlabel">姓名</ion-label>
+        <ion-input class="itemInput" placeholder="{{user.userName}}" [(ngModel)]="name" ></ion-input>
+      </ion-item>
+      <ion-item *ngIf ="user.vaildUser">
+        <ion-label class="itemlabel">Email</ion-label>
+        <ion-input class="itemInput"  type="Email" placeholder="{{user.Email}}" [(ngModel)]="Email"></ion-input>
+      </ion-item>
+      <div style="text-align:right;padding-top: 10px;" *ngIf="user.vaildUser">
+        <button id="pwdBtn">更改密碼</button>
+      </div>
+      <div style="text-align: center; padding-top: 50px;"*ngIf ="user.vaildUser">
+        <button id="modifyBtn">確定</button>
+      </div>
+      <div style="text-align: center; padding-top: 20px;"*ngIf ="user.vaildUser">
+        <button id="cancelBtn"(click)="back()">取消</button>
+      </div>
+  </ion-list>
+ 
+
+</ion-content>
+<!--  <ion-item *ngIf ="user.vaildUser">
+        <ion-label class="itemlabel">舊密碼</ion-label>
+        <ion-input class="itemInput"  type="password"  [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <ion-item *ngIf ="user.vaildUser">
+        <ion-label class="itemlabel">新密碼</ion-label>
+        <ion-input class="itemInput"  type="password"  [(ngModel)]="newPwd"></ion-input>
+      </ion-item>
+      <ion-item *ngIf ="user.vaildUser">
+        <ion-label class="itemlabel">確認新密碼</ion-label>
+        <ion-input class="itemInput"  type="password"  [(ngModel)]="newPwdCheck"></ion-input>
+      </ion-item>-->

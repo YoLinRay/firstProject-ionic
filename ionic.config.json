@@ -1,5 +1,7 @@
 {
   "name": "個人專題ion",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }

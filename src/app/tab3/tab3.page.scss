@@ -15,7 +15,7 @@ ion-content{
     text-align: center;
     font-size: 32px;
     font-weight: bolder;
-    color:#642100 ;
+    color:white;
 }
 ion-avatar{
     border: 2px solid gray !important;
@@ -30,13 +30,14 @@ ion-avatar{
     margin-right: auto;
 }
 .memberBtn{
-    width: 300px;
-    height: 80px; 
-    border-radius:10px;
-    font-size: 32px;
-    background-color: #6C6024;
+    width: 200px;
+    height: 50px; 
+    border-radius:30px;
+    font-size: 20px;
+    border: 2px solid white;
+    background-color: #4F4F48;
     color:white;
-    font-weight: bolder;
+    font-weight: bold;
 
 }
 #tabT{
@@ -57,7 +58,7 @@ ion-avatar{
 #logOut{
     border: none;
     background-color: inherit;
-    padding: 14px 28px;
+
     font-size: 20px;
     cursor: pointer;
     display: inline-block;
@@ -66,4 +67,13 @@ ion-avatar{
     font-weight: bolder;
     padding-left: 270px;
 }
-
+.userEmail{
+    
+    font-size: 20px;
+    font-weight: bolder;
+    color:white;
+    text-align: center;
+}
+ion-card{
+    --background:linear-gradient(to right, #52433D 30%, #535953);
+}

@@ -14,10 +14,10 @@ export class ForgotPwdPage implements OnInit {
 
   ngOnInit() {
   }
-  async resetPassword(form): Promise<void> {  //(忘記密碼 發送郵件)比對firebase中是否有此Email帳號
+  async resetPassword(form): Promise<void> {  //(忘記密碼 發送郵件)比對firebase中是否有此Email-帳號
   this.authService.resetPassword(form.value.email).then(async ()=>{
     const alert = await this.alertCtrl.create({ //有此帳號時的警告視窗
-      message:'已寄送郵件至Email信箱',
+      message:'已寄送更改郵件至Email信箱',
       buttons:[{text:'OK',role:'cancel'}]
     });
     await alert.present();

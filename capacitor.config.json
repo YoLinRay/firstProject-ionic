@@ -1,0 +1,11 @@
+{
+
+    "appId": "lin.app",
+    
+    "appName": "my-ion-app",
+    
+    "webDir": "www",
+    
+    "bundledWebRuntime": false
+    
+ }

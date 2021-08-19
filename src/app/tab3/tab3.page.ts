@@ -9,16 +9,20 @@ import { USERS } from '../service/users.mock';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page implements OnInit {
-  User:User[] = USERS;
-  vaildUserC:Boolean =true;
+  User: User[] = USERS;
+
   constructor(private userService: UserService, private router: Router) { }
   ngOnInit() {
   }
-  signin(){
+  signin() {
     this.router.navigate(['/signin']);
   }
-  logOut(){
+  logOut() {
     this.userService.vaildUser == false;
     location.reload();
   }
+  modify() {
+    this.router.navigate(['/modify']);
+  }
+  
 }
