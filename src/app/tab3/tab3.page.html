@@ -6,24 +6,25 @@
 <ion-content [fullscreen]="true" >
   <div style=" text-align: center;" *ngIf="userService.vaildUser === false">
     <img src="/assets/Img/kouyo.png" id="imgA">
-    <div>
+    <span>
       <button  id="tabT" (click)="signin()">前往登入會員</button>
-    </div>
+    </span>
   </div>
-  <div  *ngFor="let User of User" style="padding-top: 30px;z-index: 2;" >
-    <ion-card  >
-    <ion-avatar *ngIf="User.vaildUser" style="margin-top: 25px;">
+  <div  *ngFor="let User of User" >
+    <div  id="divCard" style="padding-top: 50px;" *ngIf="User.vaildUser">
+      <div id="photodiv" *ngIf="User.vaildUser">
+    <ion-avatar *ngIf="User.vaildUser" >
       <img *ngIf="User.vaildUser && !User.imageSrc " src="/assets/Img/noimg.png">
       <img *ngIf="User.vaildUser && User.imageSrc" src="{{User.imageSrc}}">
-    </ion-avatar>
+    </ion-avatar></div>
     <h6 class="userName" *ngIf="User.vaildUser">{{User.userName}}</h6>
     <h4 class="userEmail" *ngIf="User.vaildUser">信箱:{{User.Email}}</h4>
-    <div style="text-align: center; margin-bottom: 15px;margin-top: 15px;"*ngIf="User.vaildUser">
+    <div style="text-align: center; padding-bottom: 15px;margin-top: 15px;"*ngIf="User.vaildUser">
       <button class="memberBtn" (click)=" modify()">修改會員資料</button></div>
-  </ion-card>
-  <div style="text-align: center;" *ngIf="User.vaildUser">
+    </div>
+  <span style="text-align: center;display: inline-block;padding-top: 20px;" *ngIf="User.vaildUser">
     <button id="logOut" (click) = "logOut()">登出</button>
-  </div>
+  </span>
   <div id="travelImg"*ngIf="User.vaildUser" >
     <img src="/assets/Img/travel2.png">
   </div>

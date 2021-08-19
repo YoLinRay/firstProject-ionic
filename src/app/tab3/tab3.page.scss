@@ -18,7 +18,7 @@ ion-content{
     color:white;
 }
 ion-avatar{
-    border: 2px solid gray !important;
+    border: 3px solid white !important;
     margin:0 auto;
     width:100px!important;
     height :100px !important;
@@ -28,6 +28,7 @@ ion-avatar{
     height: 100px;
     margin-left: auto;
     margin-right: auto;
+
 }
 .memberBtn{
     width: 200px;
@@ -74,6 +75,15 @@ ion-avatar{
     color:white;
     text-align: center;
 }
-ion-card{
-    --background:linear-gradient(to right, #52433D 30%, #535953);
+#divCard{
+    background:linear-gradient(to right, #52433D 30%, #535953);;
+    border-radius: 10px;
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#photodiv{
+    position: absolute;
+    margin-top: -95px;left: 50%;
+    transform: translate(-50%);
 }
