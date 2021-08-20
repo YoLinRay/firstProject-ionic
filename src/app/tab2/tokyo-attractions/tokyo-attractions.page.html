@@ -1,9 +1,9 @@
 <ion-header [translucent]="true">
   <ion-toolbar id="toolBar">
     <ion-buttons slot="start">
-      <ion-back-button text=""></ion-back-button>
+      <ion-back-button color="light" text="" style="display: inline;"></ion-back-button>
     </ion-buttons>
-    <ion-title style="text-align:center;">東京都</ion-title>
+    <ion-title >東京都</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true">
@@ -13,7 +13,7 @@
     <div style="padding-top: 5px;">
       <ion-item>
         <img src="{{attraction.imageSrc}}" style="width:80px;height: 80px; border-radius: 10px;object-fit: cover;">
-        <div style="font-weight: bolder; margin-left: 5px;font-size: 18px;">{{attraction.Name}}
+        <div style="font-weight: bolder; margin-left: 5px;font-size: 24px;">{{attraction.Name}}
           <br>
           <ion-icon *ngFor = "let r of starAry" name="{{r}}" style="color: #FFB11B;"></ion-icon>
         </div>
