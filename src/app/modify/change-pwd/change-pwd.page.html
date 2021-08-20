@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>JAPAN景點</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list lines="full" *ngFor="let user of Users">
+    <ion-list-header lines="full" *ngIf="user.vaildUser">
+      <ion-label id="title">
+        更改密碼
+      </ion-label>
+    </ion-list-header>
+    <ion-item *ngIf="user.vaildUser">
+      <ion-label class="itemlabel">舊密碼</ion-label>
+      <ion-input class="itemInput" type="password" [(ngModel)]="password"></ion-input>
+      <span >
+        <ion-icon class="errorIcon"  name="alert-circle" *ngIf="wrongPwd == false" ></ion-icon>
+      </span>
+    </ion-item>
+    <ion-item *ngIf="user.vaildUser">
+      <ion-label class="itemlabel">新密碼</ion-label>
+      <ion-input class="itemInput" type="password" [(ngModel)]="newPwd"></ion-input>
+    </ion-item>
+    <ion-item *ngIf="user.vaildUser">
+      <ion-label class="itemlabel">確認新密碼</ion-label>
+      <ion-input class="itemInput" type="password" [(ngModel)]="newPwdCheck"></ion-input>
+      <span >
+        <ion-icon class="errorIcon"  name="alert-circle" *ngIf="samePwd == false" ></ion-icon>
+      </span>
+    </ion-item>
+    <div style="text-align: center; padding-top: 50px;" *ngIf="user.vaildUser">
+      <button id="changeBtn" (click) = "signup()">確定</button>
+    </div>
+    <div id="pwdPageImg">
+      <img src="assets/Img/pwdPage.png" *ngIf="user.vaildUser" style="height: 250px;">
+    </div>
+  </ion-list>
+
+</ion-content>

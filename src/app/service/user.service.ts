@@ -19,7 +19,17 @@ export class UserService {
     }
     return false;
   }
-
+  
+  correctPwd(password:string):boolean{
+    for (let i = 0; i < this.users.length; i++) {
+      const user = this.users[i];
+      if (password === user.password) {
+        return true 
+      }
+    }
+    return false;
+  }
+  
   getUser(id: number): User {
 
     for (let i = 0; i < this.users.length; i++) {

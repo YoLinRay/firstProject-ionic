@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: ModifyPage
+  },
+  {
+    path: 'change-pwd',
+    loadChildren: () => import('./change-pwd/change-pwd.module').then( m => m.ChangePwdPageModule)
   }
 ];
 

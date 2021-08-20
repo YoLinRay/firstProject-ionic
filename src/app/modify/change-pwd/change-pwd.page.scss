@@ -1,0 +1,48 @@
+ion-toolbar{
+    --background:#6C6024
+}
+ion-title{
+    
+    color: white;
+    font-weight: bolder;
+    font-size:x-large;
+    text-align:center;
+}
+#title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    padding-top: 40px;
+    color: 	#6C6024
+}
+.itemlabel{
+    font-size: 24px;
+    font-weight: bolder;
+    color: 	black
+}
+.itemInput{
+    font-size: 22px;
+    font-weight: bolder;
+    color: 	black
+}
+#changeBtn{
+    width: 200px;
+    height: 50px; 
+    border-radius:30px;
+    font-size: 30px;
+    background-color:#6C6024 ;
+    font-weight: bolder;
+    color: white;
+}
+#pwdPageImg{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 80px;
+    
+}
+.errorIcon{
+    color: red;
+    width: 30px;
+    height: 30px;
+}
