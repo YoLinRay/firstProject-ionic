@@ -21,10 +21,9 @@
     <h4 class="userEmail" *ngIf="User.vaildUser">信箱:{{User.Email}}</h4>
     <div style="text-align: center; padding-bottom: 15px;margin-top: 15px;"*ngIf="User.vaildUser">
       <button class="memberBtn" (click)=" modify()">修改會員資料</button></div>
+      <div style="text-align: center; padding-bottom: 15px;"*ngIf="User.vaildUser">
+        <button class="logoutBtn" (click)="logOut()">登出</button></div>
     </div>
-  <span style="text-align: center;display: inline-block;padding-top: 20px;" *ngIf="User.vaildUser">
-    <button id="logOut" (click) = "logOut()">登出</button>
-  </span>
   <div id="travelImg"*ngIf="User.vaildUser" >
     <img src="/assets/Img/travel2.png">
   </div>

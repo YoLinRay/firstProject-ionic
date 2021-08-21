@@ -4,12 +4,13 @@
   </ion-toolbar>
 </ion-header>
 <ion-content [fullscreen]="true" class="ion-padding">
- 
+ <div >
     <ion-slides [options]="slideOptions" pager="true" #slider (ionSlidesDidLoad)="slidesDidLoad(slider)">
       <ion-slide *ngFor="let item of banner">
-        <img src="{{item.imageSrc}}" style="height: 200px;">
+        <img src="{{item.imageSrc}}" style="height: 200px;border-radius: 10px;box-shadow:3px 3px 5px 6px #cccc;">
       </ion-slide>
     </ion-slides>
+  </div>
   <div>
     <h2 id="title">關東地區</h2>
     <div class="hr"></div>

@@ -5,29 +5,19 @@
 </ion-header>
 
 <ion-content class="ion-padding">
-  <div>
-    <ion-buttons (click) = "home()">
-      <span style="width: 80px; height: 80px;">
-      <img src="/assets/Img/backhome.png" ></span>
-      <h3 style="color: #484891; font-size: 18px; font-weight: bolder;">回首頁</h3>
+    <ion-buttons (click) = "home()"style="display:inline-block">
+      <img src="/assets/Img/backhome.png" style="width: 80px; height: 65px;">
+      <h3 style="color: #484891; font-size: 18px; font-weight: bolder;margin-top: 0px;text-align: center;">回首頁</h3>
     </ion-buttons>
-  </div>
+  
   <h4 id="title">會員登入</h4>
   <div id="account">
-    <span style="padding-right: 120px;">
-      <label style="font-size: 20px; font-weight: bold; color: #272727;">請輸入Email信箱:</label>
-    </span>
-    <br>
-    <input type="email" id="email" name="email" size="30" placeholder="12345@example.com" [(ngModel)]="userEmail"
-      style="height: 30px; background-color: white; border-radius: 5px;">
+    <input type="email" id="email" name="email" size="35" placeholder="請輸入Email信箱:" [(ngModel)]="userEmail"
+      style="height: 45px; background-color: #BDC0BA; border-radius: 30px;border: none;font-size: 14;">
   </div>
   <div id="pwd">
-    <span style="padding-right: 175px;">
-      <label style="font-size: 20px; font-weight: bold; color: #272727;">請輸入密碼:</label>
-    </span>
-    <br>
-    <input type="password" name="pwd" size="30" placeholder="密碼" [(ngModel)]="password"
-      style="height: 30px; background-color: white; border-radius: 5px;">
+    <input type="password" name="pwd" size="35" placeholder="密碼" [(ngModel)]="password"
+      style="height: 45px; background-color: #BDC0BA; border-radius: 30px;border: none;font-size: 14;">
   </div>
   <div style="text-align: center;">
     <label *ngIf="!validUser" style="color: #AE0000;text-shadow: 0.1em 3px 6px red; font-size: large;padding-left: 200px; font-weight: bolder;">輸入錯誤</label>

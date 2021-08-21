@@ -1,9 +1,7 @@
-ion-toolbar{
-    --background:#6C6024
-}
+
 ion-title{
     text-align: center;
-    color: white;
+    color: #0C0C0C;
     font-weight: bolder;
     font-size:20px;
 }
@@ -13,7 +11,7 @@ ion-content{
 }
 .userName{
     text-align: center;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bolder;
     color:white;
 }
@@ -24,30 +22,43 @@ ion-avatar{
     height :100px !important;
 } 
 #travelImg{
-    width: 300px;
-    height: 100px;
+    width: 150px;
+    height: 50px;
     margin-left: auto;
-    margin-right: auto;
-
+    
 }
 .memberBtn{
-    width: 200px;
+    width: 250px;
     height: 50px; 
     border-radius:30px;
     font-size: 20px;
     border: 2px solid white;
-    background-color: #4F4F48;
+    background:linear-gradient(to right, #8F77B5 30%,#51A8DD);
     color:white;
-    font-weight: bold;
+    font-weight: bolder;
+    font-family: sans-serif;
+
+}
+.logoutBtn{
+    width: 250px;
+    height: 50px; 
+    border-radius:30px;
+    font-size: 18px;
+    border: 2px solid white;
+    background:linear-gradient(to right, #8F77B5 30%,#51A8DD);
+    color:white;
+    font-weight: bolder;
+    font-family: sans-serif;
 
 }
 #tabT{
-    width: 200px;
+    width: 250px;
     height: 50px; 
     border-radius:30px;
-    font-size: 24px;
-    background-color:#6C6024 ;
+    font-size: 18px;
+    background-color:#66BAB7 ;
     font-weight: bolder;
+    font-family: sans-serif;
     color: white;
 }
 #imgA{
@@ -56,29 +67,17 @@ ion-avatar{
     height: 400px;
    
 }
-#logOut{
-    border: none;
-    background-color: inherit;
-
-    font-size: 20px;
-    cursor: pointer;
-    display: inline-block;
-    color: red;
-    text-decoration:underline;
-    font-weight: bolder;
-    padding-left: 270px;
-}
 .userEmail{
     
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bolder;
     color:white;
     text-align: center;
 }
 #divCard{
-    background:linear-gradient(to right, #52433D 30%, #535953);;
+    background:linear-gradient(to right, #8F77B5 30%,#51A8DD);
     border-radius: 10px;
-    margin-top: 70px;
+    margin-top: 150px;
     margin-left: 20px;
     margin-right: 20px;
 }
