@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button color="light" text="" style="display: inline;"></ion-back-button>
+      <ion-back-button  text="" style="display: inline;"></ion-back-button>
     </ion-buttons>
     <ion-title>JAPAN景點</ion-title>
   </ion-toolbar>
@@ -14,7 +14,7 @@
         更改密碼
       </ion-label>
     </ion-list-header>
-    <ion-item *ngIf="user.vaildUser">
+    <ion-item *ngIf="user.vaildUser" style="padding-top: 20px;">
       <ion-label class="itemlabel">舊密碼</ion-label>
       <ion-input class="itemInput" type="password" [(ngModel)]="password"></ion-input>
       <span >
@@ -36,7 +36,7 @@
       <button id="changeBtn" (click) = "signup()">確定</button>
     </div>
     <div id="pwdPageImg">
-      <img src="assets/Img/pwdPage.png" *ngIf="user.vaildUser" style="height: 250px;">
+      <img src="assets/Img/pwdPage.png" *ngIf="user.vaildUser" style="height: 200px;">
     </div>
   </ion-list>
 

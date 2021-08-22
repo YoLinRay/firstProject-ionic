@@ -1,20 +1,17 @@
-ion-toolbar{
-    --background:#6C6024
-}
 ion-title{
     text-align: center;
-    color: white;
+    color: #0C0C0C;
     font-weight: bolder;
     font-size:20px;
    padding-right: 20%;
-  
 }
 #title{
     text-align: center;
-    font-size: 40px;
+    font-size: 38px;
     font-weight: bolder;
+    color: 	#0C0C0C;
     padding-top: 40px;
-    color: 	#6C6024
+    margin-bottom: 35px;
 }
 .itemlabel{
     font-size: 24px;
@@ -22,24 +19,25 @@ ion-title{
     color: 	black
 }
 .itemInput{
-    font-size: 22px;
+    font-size: 16px;
     font-weight: bolder;
     color: 	black
 }
 #changeBtn{
-    width: 200px;
-    height: 50px; 
+    width: 320px;
+    height: 45px; 
     border-radius:30px;
-    font-size: 30px;
-    background-color:#6C6024 ;
+    font-size: 18px;
+    background-color:#66BAB7 ;
     font-weight: bolder;
+    font-family: sans-serif;
     color: white;
 }
 #pwdPageImg{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 40px;
     
 }
 .errorIcon{
